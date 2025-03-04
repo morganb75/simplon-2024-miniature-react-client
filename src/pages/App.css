@@ -51,9 +51,9 @@
 
 .login-container button {
   padding: 10px;
-  background: #007bff;
+  background: #295685;
   color: white;
-  border: none;
+  border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
 }
