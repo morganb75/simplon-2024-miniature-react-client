@@ -24,7 +24,7 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h2>{isLogin ? 'Login' : 'Register'}</h2>
+      <h3>{isLogin ? 'Login' : 'Register'}</h3>
       {error && <div className="error">{error}</div>}
       <form onSubmit={handleSubmit}>
         <input
