@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -35,4 +35,9 @@ jobs:
         run: npm run build
 
       - name: Run Lighthouse CI
-        run: lhci autorun
+        run: |
+            npm install -g @lhci/cli
+            lhci autorun
+
+        env:
+          LHCI_GITHUB_TOKEN: ${{ secrets.LHCI_GITHUB_TOKEN }}
