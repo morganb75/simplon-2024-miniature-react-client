@@ -4,10 +4,9 @@ import Post from "../components/Post";
 import Login from "../components/Login";
 import FeedSwitch from "../components/FeedSwitch";
 import { useAuth, AuthProvider } from "../contexts/AuthContext";
-import { getNewestPosts, getTrendingPosts /*, getNewestPosts */ } from "../services/postService";
+import { getNewestPosts, getTrendingPosts } from "../services/postService";
 
 const TRENDING_FEED=true;
-const NEWEST_FEED=true;
 
 function AppContent() {
   const { auth } = useAuth();
